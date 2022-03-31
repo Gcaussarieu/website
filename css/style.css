@@ -13,11 +13,18 @@ body {
   font-family: Exo, Arial, Helvetica, sans-serif;
 }
 
+p {
+  font-family: "Open Sans";
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+
 h1 {
   font-family: Exo, Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 4rem;
   margin: 1rem 0;
+  padding: 2rem;
 }
 
 h2 {
@@ -33,29 +40,35 @@ a {
 
 .container {
   max-width: var(--max-width);
-  overflow: hidden;
   margin: 0 auto;
 }
 
 /*Hero*/
-
+.hero .container {
+  position: relative;
+}
 .hero__image {
+  height: 300px;
+  background-image: url("../images/hero2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 600px;
-
   width: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .hero__heading {
-  position: relative;
   text-align: center;
-  bottom: 150px;
+  margin: auto 0;
   background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
 }
 
 .hero__heading h1 {
   text-shadow: 2px 2px 3px #939393;
-
-  padding-top: 2rem;
+  padding: 2rem;
+  margin-top: 0;
 }
 
 .hero__heading h2 {
@@ -237,10 +250,95 @@ a {
 .icon {
   width: 30px;
   height: 30px;
-  filter: invert(1);
   margin: 10px;
 }
 
 #icon--navbar {
   align-self: flex-end;
+  filter: invert(1);
+}
+
+/*Blocks*/
+.block {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+/*Grid*/
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*About*/
+
+.about h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.about__profile {
+  border-radius: 5px;
+  justify-self: center;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 20fr 80fr;
+  }
+
+  .grid--3x5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/*Portfolio*/
+.portfolio .grid {
+  gap: 1rem;
+  row-gap: 4rem;
+}
+.portfolio__card {
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.portfolio__card:hover {
+  transform: scale(1.1);
+
+  transition: all 0.5s;
+
+  z-index: 1;
+}
+
+.portfolio__img {
+  width: 100%;
+  max-height: 260px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__portfolio {
+}
+
+@media screen and (min-width: 768px) {
+  .grid--3x5 {
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
