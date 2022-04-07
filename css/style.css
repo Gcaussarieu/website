@@ -24,7 +24,7 @@ h1 {
   font-weight: bold;
   font-size: 4rem;
   margin: 1rem 0;
-  padding: 2rem;
+  padding: 2rem 0rem;
 }
 
 h2 {
@@ -260,9 +260,19 @@ a {
 
 /*Blocks*/
 .block {
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  
+margin: 5rem 3rem 10rem 3rem;
 }
+@media screen and (min-width:768px){
+  .block{
+    margin:auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top:5rem;
+    margin-bottom : 12rem;
+    }
+  }
+
 
 /*Grid*/
 
@@ -274,6 +284,11 @@ a {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
   }
+
+  .grid--2x5 {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -281,6 +296,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
 /*About*/
 
@@ -300,9 +316,7 @@ a {
     grid-template-columns: 20fr 80fr;
   }
 
-  .grid--3x5 {
-    grid-template-columns: repeat(5, 1fr);
-  }
+
 }
 
 /*Portfolio*/
@@ -310,22 +324,21 @@ a {
   gap: 1rem;
   row-gap: 4rem;
 }
+
 .portfolio__card {
   transform: scale(1);
   transition: all 0.5s;
+  margin: 0 auto;
 }
 
 .portfolio__card:hover {
   transform: scale(1.1);
-
   transition: all 0.5s;
-
   z-index: 1;
 }
 
-.portfolio__img {
-  width: 100%;
-  max-height: 260px;
+.portfolio__title{
+  font-size: 2rem;
 }
 .header {
   display: flex;
@@ -333,12 +346,77 @@ a {
   align-items: center;
 }
 
-.header__portfolio {
+@media screen and (min-width:768px){
+  .portfolio__img {
+    width: 100%;
+    max-height: 260px;
+  }
+
+  .portfolio__title{
+    font-size: 1.3rem;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .grid--3x5 {
-    grid-template-rows: repeat(3, 300px);
-    grid-template-columns: repeat(5, 1fr);
-  }
+
+
+
+
+
+/*CV*/
+.CV__Card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #949494;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+.CV__Card:first-of-type{
+  margin-top: 0;
+}
+.CV__LOGO{
+  border-radius: 50%;
+  width: 70px;
+}
+
+.CV__Description{
+  margin-left: 2rem;
+  color: #1e1e1e;
+}
+
+.CV__Description a{
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.CV__Title{
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+.CV__Description p{
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+.CV__Title{
+  font-weight: 700;
+}
+
+.CV__Company, .CV__Date, .CV__Location{
+  font-size: 1.3rem;
+}
+.CV__Company{
+  font-weight: 600;
+}
+.CV__Date, .CV__Location{
+
+ color: #6a6a6a;
+}
+
+
+
+/*Structure Bas Carbone*/
+.Low--Carbon{
+  height: 100vh;
 }
