@@ -95,7 +95,7 @@ a {
 }
 
 .navbar {
-  background: black;
+  background:#232323;
   font-family: Exo, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   margin: 0;
@@ -479,31 +479,113 @@ padding-left: 0;
 
   margin-bottom: 3rem;
   box-shadow: 0px 0px 20px darkgrey;
+  overflow: hidden;
 }
 
 
 .digital__description h2{
   padding: 1rem 2rem;
   font-weight: 500;
+  font-size: 3rem;
 
 }
 .digital__videos {
 max-width: 100%;
+max-height: 500px;
+padding: 1rem;
+align-self: center;
 }
 
+.digital__videos video {
+margin :0 auto;
+  }
+  
 
-@media screen and (min-width:768px){
-  .grid--1x2{
-    grid-template-columns: 35fr 65fr;
+  @media screen and (min-width: 768px) {
+    .digital__article.grid--1x2 {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 
+@media screen and (min-width:900px){
+  
+  .digital__article.grid--1x2{
+    grid-template-columns: 35fr 65fr;
+  }
+  
   .digital__article:nth-of-type(even) {
     grid-template-columns: 65fr 35fr;
   }
+
   .digital__article:nth-of-type(even) .media{
     order: -1;
   }
- 
+}
 
 
+
+/*Footer*/
+.footer{
+  background-color:  #232323;
+  min-height: 150px;
+  align-content: center;
+}
+
+.footer.block{
+  
+  margin: 0;
+
+}
+
+.contact{
+display: block;
+margin :0 auto;
+}
+
+.contact__type{
+  
+  color: rgb(181, 181, 181);
+  font-family: Exo, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-decoration: none;
+  align-content: center;
+  border-bottom: 1px solid rgb(181, 181, 181);
+}
+
+.contact__type:last-of-type{
+  border-bottom: none
+
+}
+.contact__span{
+  padding-left: 1rem;
+}
+
+.contact__content{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.contact__type a{
+
+  color: rgb(181, 181, 181);
+  justify-content: center;
+align-content: center;
+}
+
+@media screen and (min-width:768px){
+  .contact{
+    display :grid;
+    }
+
+    
+.contact__type{
+  border:none ;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
 }
