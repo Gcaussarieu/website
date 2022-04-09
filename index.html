@@ -23,27 +23,27 @@
       />
       <div class="container">
         <ul class="list nav__list collapsible__content">
-          <li><a href="#">A Propos</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">CV</a></li>
+          <li><a href="#about">A Propos</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#cv">CV</a></li>
           <li class="dropdown">
             <button class="drop-btn">
-              <a href="">Structures Bas Carbone</a>
+              <a href="#lowCarbon">Structures Bas Carbone</a>
             </button>
             <div class="dropdown-content">
-              <a href="#">Bois</a>
-              <a href="#">Pierre</a>
-              <a href="#">Terre</a>
-              <a href="#">Paille</a>
+              <a href="#lowCarbon">Bois</a>
+              <a href="#lowCarbon">Pierre</a>
+              <a href="#lowCarbon">Terre</a>
+              <a href="#lowCarbon">Paille</a>
             </div>
           </li>
           <li class="dropdown">
-            <button class="drop-btn"><a href="">Digital</a></button>
+            <button class="drop-btn"><a href="#digital">Digital</a></button>
             <div class="dropdown-content">
-              <a href="#">Grasshopper</a>
-              <a href="#">C#</a>
-              <a href="#">Python</a>
-              <a href="#">Web</a>
+              <a href="#digital">Grasshopper</a>
+              <a href="#digital">C#</a>
+              <a href="#digital">Python</a>
+              <a href="#digital">Web</a>
             </div>
           </li>
           <li><a href="#">Toolbox</a></li>
@@ -64,7 +64,7 @@
       </div>
     </section>
 
-    <section class="block about container">
+    <section id="about" class="block about container">
       <header class="header">
         <div class="header__heading">
           <h1>A Propos</h1>
@@ -88,45 +88,207 @@
       </div>
     </section>
 
-    <section class="block portfolio container">
+    <section id="portfolio" class="block portfolio container">
       <header class="header header__portfolio">
         <h1>Portfolio</h1>
       </header>
       <div class="grid grid--2x5">
-        <div class="portfolio__card">
+        <div class="card portfolio__card">
           <img src="images/project (1).jpg" alt="" class="portfolio__img" />
           <div class="portfolio__title"><h3>project 1</h3></div>
         </div>
-        <div class="portfolio__card">
+        <div class="card portfolio__card">
           <img src="images/project (2).jpg" alt="" class="portfolio__img" />
           <div class="portfolio__title"><h3>project 2</h3></div>
         </div>
-        <div class="portfolio__card">
+        <div class="card portfolio__card">
           <img src="images/project (3).jpg" alt="" class="portfolio__img" />
           <div class="portfolio__title"><h3>project 3</h3></div>
         </div>
-        <div class="portfolio__card">
+        <div class="card portfolio__card">
           <img src="images/project (4).jpg" alt="" class="portfolio__img" />
           <div class="portfolio__title"><h3>project 4</h3></div>
         </div>
-        <div class="portfolio__card">
+        <div class="card portfolio__card">
           <img src="images/project (5).jpg" alt="" class="portfolio__img" />
           <div class="portfolio__title"><h3>project 5</h3></div>
         </div>
-        <div class="portfolio__card">
+        <div class="card portfolio__card">
           <img src="images/project (7).jpg" alt="" class="portfolio__img" />
           <div class="portfolio__title"><h3>project 7</h3></div>
         </div>
-        <div class="portfolio__card">
+        <div class="card portfolio__card">
           <img src="images/project (8).jpg" alt="" class="portfolio__img" />
           <div class="portfolio__title"><h3>project 8</h3></div>
         </div>
       </div>
     </section>
 
-    <section class="cv block container">
+    <section id="lowCarbon" class="Low--Carbon container block">
+      <h1>Structures bas Carbone</h1>
+      <div class="Low--Carbon Material__Motivations">
+        <h2>Quel est l'intérêt?</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ex
+          quod incidunt quas earum voluptatem quibusdam laudantium at neque,
+          recusandae suscipit consequatur, libero totam aut tenetur praesentium
+          quisquam nulla eaque eos labore itaque veritatis? Voluptatem unde
+          cupiditate eligendi, voluptate sint minima quod mollitia, consequatur
+          magni dolorem rem. Recusandae, optio enim!
+        </p>
+      </div>
+      <div class="Materials__Container container grid grid--1x4">
+        <div class="card card__Material">
+          <div class="material__image">
+            <img src="images/timber.jpg" class="material__image" alt="timber" />
+          </div>
+          <div class="material__title">
+            <h2>Bois</h2>
+          </div>
+          <div class="material__description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores enim inventore aperiam culpa ex, dolores tempora
+              laudantium cupiditate corporis assumenda dignissimos, minima
+              repellat a eius ab natus expedita doloribus? Nemo ex fugiat
+              placeat sed pariatur, sint, omnis repudiandae tempora error at
+              quaerat nulla esse perspiciatis ipsam inventore rem dolorem
+              dolores!
+            </p>
+          </div>
+        </div>
+        <div class="card card__Material">
+          <img src="images/stone.jpg" class="material__image" alt="Stone" />
+
+          <div class="material__title">
+            <h2>Pierre</h2>
+          </div>
+          <div class="material__description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores enim inventore aperiam culpa ex, dolores tempora
+              laudantium cupiditate corporis assumenda dignissimos, minima
+              repellat a eius ab natus expedita doloribus? Nemo ex fugiat
+              placeat sed pariatur, sint, omnis repudiandae tempora error at
+              quaerat nulla esse perspiciatis ipsam inventore rem dolorem
+              dolores!
+            </p>
+          </div>
+        </div>
+        <div class="card card__Material">
+          <img src="images/earth.jpg" class="material__image" alt="earth" />
+
+          <div class="material__title">
+            <h2>Terre</h2>
+          </div>
+          <div class="material__description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores enim inventore aperiam culpa ex, dolores tempora
+              laudantium cupiditate corporis assumenda dignissimos, minima
+              repellat a eius ab natus expedita doloribus? Nemo ex fugiat
+              placeat sed pariatur, sint, omnis repudiandae tempora error at
+              quaerat nulla esse perspiciatis ipsam inventore rem dolorem
+              dolores!
+            </p>
+          </div>
+        </div>
+        <div class="card card__Material">
+          <img src="images/fibre.jpg" class="material__image" alt="fibres" />
+
+          <div class="material__title">
+            <h2>Fibre</h2>
+          </div>
+          <div class="material__description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores enim inventore aperiam culpa ex, dolores tempora
+              laudantium cupiditate corporis assumenda dignissimos, minima
+              repellat a eius ab natus expedita doloribus? Nemo ex fugiat
+              placeat sed pariatur, sint, omnis repudiandae tempora error at
+              quaerat nulla esse perspiciatis ipsam inventore rem dolorem
+              dolores!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="digital" class="digital block container">
+      <h1>Technologies Digitales</h1>
+      <article class="digital__article programming grid grid--1x2">
+        <div class="digital__description">
+          <h2>Programmation</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ex
+            velit quos, ut quibusdam impedit fugit esse, sit non optio explicabo
+            magni, officiis accusantium aliquam placeat enim consequatur. Ullam
+            perspiciatis sapiente libero aliquam neque quibusdam praesentium ut
+            quisquam fuga at in provident distinctio consequatur aspernatur nisi
+            ad placeat, suscipit quod?
+          </p>
+        </div>
+
+        <div class="media">
+          <video class="digital__videos {" autoplay loop src="videos/test.mp4">
+            Your browser does not support the video tag
+          </video>
+        </div>
+      </article>
+      <article class="digital__article parametric grid grid--1x2">
+        <div class="digital__description">
+          <h2>design paramétrique</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ex
+            velit quos, ut quibusdam impedit fugit esse, sit non optio explicabo
+            magni, officiis accusantium aliquam placeat enim consequatur. Ullam
+            perspiciatis sapiente libero aliquam neque quibusdam praesentium ut
+            quisquam fuga at in provident distinctio consequatur aspernatur nisi
+            ad placeat, suscipit quod?
+          </p>
+        </div>
+
+        <div class="media">
+          <video
+            class="digital__videos {"
+            autoplay
+            loop
+            src="videos/parametric_video.mp4"
+          >
+            Your browser does not support the video tag
+          </video>
+        </div>
+      </article>
+      <article class="digital__article robotic grid grid--1x2">
+        <div class="digital__description">
+          <h2>Robotique</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ex
+            velit quos, ut quibusdam impedit fugit esse, sit non optio explicabo
+            magni, officiis accusantium aliquam placeat enim consequatur. Ullam
+            perspiciatis sapiente libero aliquam neque quibusdam praesentium ut
+            quisquam fuga at in provident distinctio consequatur aspernatur nisi
+            ad placeat, suscipit quod?
+          </p>
+        </div>
+
+        <div class="media">
+          <video
+            class="digital__videos {"
+            autoplay
+            loop
+            muted
+            src="videos/robot_video.mp4"
+          >
+            Your browser does not support the video tag
+          </video>
+        </div>
+      </article>
+    </section>
+
+    <section id="cv" class="cv block container">
       <header class="header">
-        <h1>CV</h1>
+        <h1>Expériences</h1>
       </header>
       <div class="CV__Card container">
         <div class="CV__Logo">
@@ -161,9 +323,7 @@
             Research)
           </h2>
           <p class="CV__Company">
-            <a
-              href="https://www.icd.uni-stuttgart.de/teaching/itech/"
-              target="_blank"
+            <a href="https://www.itech.uni-stuttgart.de/" target="_blank"
               >ICD / ITKE Université de Stuttgart</a
             >
           </p>
@@ -197,10 +357,6 @@
           <p class="CV__Location">Paris, France</p>
         </div>
       </div>
-    </section>
-
-    <section class="Low--Carbon container block">
-      <h1>Structures bas Carbone</h1>
     </section>
     <script src="js/main.js"></script>
   </body>
