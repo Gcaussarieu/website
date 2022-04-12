@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Guillaume Caussarieu - Site web personel - Ingénierie digitale et bas carbone"
+    />
+    <meta
+      property="og:title"
+      content="Guillaume Caussarieu - Site web personel - Ingénierie digitale et bas carbone"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/profile.jpg" />
+    <meta property="og:url" content="http://guillaume-caussarieu.com" />
+
     <script
       src="https://kit.fontawesome.com/479e1a566b.js"
       crossorigin="anonymous"
@@ -15,7 +27,10 @@
       href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,700&family=Inter:wght@400;700&family=Open+Sans&family=Roboto&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Guillaume Caussarieu</title>
   </head>
   <body>
@@ -62,14 +77,14 @@
       <div class="container">
         <div class="hero__image">
           <header class="hero__heading">
-            <h1 class="heading">Low Carbon Engineering & Computation</h1>
+            <h1 class="heading">Ingénierie digitale bas carbone</h1>
             <h2 class="heading">Guillaume Caussarieu</h2>
           </header>
         </div>
       </div>
     </section>
 
-    <section id="about" class="block about container">
+    <section id="about" class="block about container" data-aos="fade-up">
       <header class="header">
         <div class="header__heading">
           <h1>A Propos</h1>
@@ -93,7 +108,11 @@
       </div>
     </section>
 
-    <section id="portfolio" class="block portfolio container">
+    <section
+      id="portfolio"
+      class="block portfolio container"
+      data-aos="fade-up"
+    >
       <header class="header header__portfolio">
         <h1>Portfolio</h1>
       </header>
@@ -129,7 +148,11 @@
       </div>
     </section>
 
-    <section id="lowCarbon" class="Low--Carbon container block">
+    <section
+      id="lowCarbon"
+      class="Low--Carbon container block"
+      data-aos="fade-up"
+    >
       <h1>Structures bas Carbone</h1>
       <div class="Low--Carbon Material__Motivations">
         <h2>Quel est l'intérêt?</h2>
@@ -219,9 +242,12 @@
       </div>
     </section>
 
-    <section id="digital" class="digital block container">
+    <section id="digital" class="digital block container" data-aos="fade-up">
       <h1>Technologies Digitales</h1>
-      <article class="digital__article programming grid grid--1x2">
+      <article
+        class="digital__article programming grid grid--1x2"
+        data-aos="fade-up"
+      >
         <div class="digital__description">
           <h2>Programmation</h2>
           <p>
@@ -240,7 +266,10 @@
           </video>
         </div>
       </article>
-      <article class="digital__article parametric grid grid--1x2">
+      <article
+        class="digital__article parametric grid grid--1x2"
+        data-aos="fade-up"
+      >
         <div class="digital__description">
           <h2>Design paramétrique</h2>
           <p>
@@ -264,7 +293,10 @@
           </video>
         </div>
       </article>
-      <article class="digital__article robotic grid grid--1x2">
+      <article
+        class="digital__article robotic grid grid--1x2"
+        data-aos="fade-up"
+      >
         <div class="digital__description">
           <h2>Robotique</h2>
           <p>
@@ -291,7 +323,7 @@
       </article>
     </section>
 
-    <section id="cv" class="cv block container">
+    <section id="cv" class="cv block container" data-aos="fade-up">
       <header class="header">
         <h1>Expériences</h1>
       </header>
@@ -405,5 +437,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
