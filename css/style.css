@@ -18,6 +18,11 @@ p {
   font-size: 2rem;
   padding: 0 2rem;
 }
+.card__Material .credit{
+  font-family: "Open Sans";
+  font-size: 1rem;
+  padding: 0 2rem;
+}
 
 h1 {
   font-family: Exo, Arial, Helvetica, sans-serif;
@@ -54,7 +59,7 @@ a {
       padding-left: 2rem;
       padding-right: 2rem;
       margin-top:5rem;
-      margin-bottom : 12rem;
+      margin-bottom : 8rem;
       }
     }
   
@@ -483,7 +488,7 @@ padding-left: 0;
 .card__Material{
   margin: 0 auto;
  max-width:500px;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .material__image{
