@@ -317,6 +317,11 @@ height: 95vh;
 
 /*About*/
 
+
+.img__about{
+  display: flex;
+justify-content: center;
+}
 .about h1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -326,17 +331,28 @@ height: 95vh;
   max-width: 400px;
   border-radius: 5px;
   justify-self: center;
-  padding-bottom: 2rem;
   align-self: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .about__text p{
   font-size: 1.9rem;
 }
 
-@media screen and (min-width: 900px) {
+.about.grid--1x2 {
+  display: block;
+}
 
-  .about .grid--1x2 .block {
+
+@media screen and (min-width: 1200px) {
+
+  .about.grid {
+    display: grid;
+    grid-template-columns: 20fr 80fr;
+  }
+  .about.grid--1x2 {
+    display: grid;
     grid-template-columns: 20fr 80fr;
   }
 
