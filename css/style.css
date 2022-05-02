@@ -321,6 +321,7 @@ height: 95vh;
 .img__about{
   display: flex;
 justify-content: center;
+width: 100%;
 }
 .about h1 {
   padding-top: 1rem;
@@ -329,6 +330,7 @@ justify-content: center;
 
 .about__profile {
   max-width: 400px;
+  width: 100%;
   border-radius: 5px;
   justify-self: center;
   align-self: center;
@@ -573,6 +575,10 @@ margin :0 auto;
     justify-content: space-evenly;
   }
 
+  .media.grid{
+max-width: 900px;
+  }
+
   .media__img{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -580,6 +586,7 @@ margin :0 auto;
       max-width: 500px;
       margin: 0 auto;
       align-self: center;
+      width: 100%;
   }  
   
 
